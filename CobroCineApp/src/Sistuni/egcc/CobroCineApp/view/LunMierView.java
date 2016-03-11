@@ -191,13 +191,18 @@ public class LunMierView extends javax.swing.JPanel {
         pelicula=cbpeli.getSelectedItem().toString();
            
         String repo="--------CINE---------\n";
-        repo+="Pelicula: \t"+pelicula+"\n";
-        repo+="Entradas adultos: \t"+lm.getCantAdult()+"\n";
-        repo+="Entradas niños: \t"+lm.getCantNiñ()+"\n";
-        repo+="Total a pagar: \t"+total;
+        repo+="Pelicula:           "+pelicula+"\n";
+        repo+="Entradas adultos:   "+lm.getCantAdult()+"\n";
+        repo+="Entradas niños:     "+lm.getCantNiñ()+"\n";
+        repo+="Total a pagar:      "+total;
         
                  
             JOptionPane.showMessageDialog(null,repo);
+            
+            //Reinicio
+            txtAdult.setText("");
+            txtNiñ.setText("");
+            cbpeli.setSelectedIndex(0);
          }
         else{
             

@@ -52,7 +52,7 @@ public class MartesView extends javax.swing.JPanel {
 
         jLabel3.setText("Película: ");
 
-        cbpeli.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "La bruja", "Madagascar", "Deadpool", "Zootopia", "Chucky", "Titanic", " " }));
+        cbpeli.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "La bruja", "Madagascar", "Deadpool", "Zootopia", "Chucky", "Titanic" }));
 
         jLabel1.setText("Ingrese cantidad de adultos: ");
 
@@ -184,11 +184,17 @@ public class MartesView extends javax.swing.JPanel {
         pelicula=cbpeli.getSelectedItem().toString();
            
         String repo="--------CINE---------\n";
-        repo+="Entradas adultos: \t"+mar.getCantAdult()+"\n";
-        repo+="Entradas niños: \t"+mar.getCantNiñ()+"\n";
-        repo+="Total a pagar: \t"+total;
+         repo+="Pelicula:           "+pelicula+"\n";
+        repo+="Entradas adultos:    "+mar.getCantAdult()+"\n";
+        repo+="Entradas niños:      "+mar.getCantNiñ()+"\n";
+        repo+="Total a pagar:       "+total;
                         
-            JOptionPane.showMessageDialog(null,repo + total);
+            JOptionPane.showMessageDialog(null,repo);
+            
+            //Reinicio
+            txtAdult.setText("");
+            txtNiñ.setText("");
+            cbpeli.setSelectedIndex(0);
             }
         else{
             

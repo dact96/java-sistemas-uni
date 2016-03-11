@@ -96,14 +96,13 @@
     <Component class="javax.swing.JComboBox" name="cbpeli">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="7">
+          <StringArray count="6">
             <StringItem index="0" value="La bruja"/>
             <StringItem index="1" value="Madagascar"/>
             <StringItem index="2" value="Deadpool"/>
             <StringItem index="3" value="Zootopia"/>
             <StringItem index="4" value="Chucky"/>
             <StringItem index="5" value="Titanic"/>
-            <StringItem index="6" value=" "/>
           </StringArray>
         </Property>
       </Properties>
