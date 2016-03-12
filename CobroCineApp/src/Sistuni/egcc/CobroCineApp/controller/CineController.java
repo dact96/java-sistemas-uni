@@ -25,7 +25,7 @@ public class CineController {
         
         
     }
-    //Polimorfismo por dias
+    //Sobrecarga por dias
     
     //Lunes y Miercoles
     public float precioNiño(float precioadult, LunesMiercoles serv) {
